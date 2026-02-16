@@ -333,3 +333,41 @@ header div {
   font-size: 0.9rem;
   color: #666;
 }
+
+/* celular */
+@media (max-width: 768px) {
+  
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  header p {
+    font-size: 1rem;
+    padding: 0 15px;
+    text-align: center;
+  }
+
+  section {
+    padding: 40px 15px;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  .comentarios-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .card-comentario {
+    width: 100%;
+  }
+
+  .form-reserva {
+    gap: 12px;
+  }
+  
+}
