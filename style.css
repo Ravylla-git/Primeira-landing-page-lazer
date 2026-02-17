@@ -93,25 +93,6 @@ header div {
   line-height: 1.6;
 }
 
-
-.galeria-beneficios-1 {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 20px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.galeria-beneficios-1 img:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 20px 60px rgba(255, 247, 247, 0.89);
-}
-
-.imagem-pequena {
-    width: 500px;
-    height: 700px;
-}
-
 .texto-2 {
     margin: 0 auto;
     max-width: 1000px;
@@ -119,32 +100,28 @@ header div {
       text-shadow: 1px 1px 4px rgba(0,0,0,0.2);
 }
 
-.galeria-imagens-2 {
+
+.galeria-beneficios-1 {
     display: flex;
     justify-content: center;
     gap: 20px;
     margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.galeria-beneficios-1 img:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 60px rgba(255, 247, 247, 0.89);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-    .galeria-imagens-2 img:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 20px 60px rgba(255, 247, 247, 0.89);
-    }
-
-
-.galeria-imagens-3 {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 20px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+.imagem-pequena {
+    width: 280px;
+  height: auto;
+  border-radius: 12px;
 }
 
-    .galeria-imagens-3 img:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 20px 60px rgba(255, 247, 247, 0.89);
-    }
+
 
 #cor-1 {
     background: linear-gradient(180deg, #ffffff, #5fb7ff, #7ee3e3, #ffffff);
@@ -336,46 +313,15 @@ header div {
 
 /* celular */
 @media (max-width: 768px) {
-  .galeria-beneficios-1, .galeria-imagens-2, .galeria-imagens-3 {
+  .galeria-beneficios-1 {
     flex-direction: column;
-    height: 300px;
-    object-fit: cover;
-
+    align-items: center;
     
   }
   
-  header h1 {
-    font-size: 1.8rem;
-  }
-
-  header p {
-    font-size: 1rem;
-    padding: 0 15px;
-    text-align: center;
-  }
-
-  section {
-    padding: 40px 15px;
-  }
-
-  img {
+ .galeria-beneficios-1 img {
     width: 100%;
-    height: auto;
-    display: block;
-  }
-
-  .comentarios-container {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .card-comentario {
-    width: 100%;
-  }
-
-  .form-reserva {
-    gap: 12px;
+    max-width: 350px;
   }
   
 }
