@@ -221,7 +221,7 @@ header div {
     max-width: 300px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     flex-direction: column;
-    flex-basis: 29rem;
+    display: flex;
 }
 
 .cartão:hover {
