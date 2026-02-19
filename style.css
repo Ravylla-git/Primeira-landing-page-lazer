@@ -252,6 +252,14 @@ header div {
 
 }
 
+@media (max-width: 768px) {
+  .formulario, .valores {
+    width: 100%;
+    max-width: none;
+    padding: 10px;
+  }
+}
+
 .reserva{
   background: linear-gradient(to bottom, #ffffff, #eef5fb);
   padding: 90px 20px;
